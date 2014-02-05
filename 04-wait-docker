@@ -1,0 +1,2 @@
+#!/bin/bash -i -x
+ssh -t ubuntu@$(./03-get-ip) watch -n 5 pgrep docker

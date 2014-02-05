@@ -1,0 +1,3 @@
+This repository contains a few helper scripts I use for giving demos of docker. Nothing particularly special, but the AWS cli and its output is not intuitive enough for straight interactive use -- I prefer to script it.
+
+I'm publishing this so those present in my demos can fetch these scripts for themselves.

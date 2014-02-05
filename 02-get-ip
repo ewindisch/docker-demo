@@ -1,0 +1,6 @@
+#!/bin/sh
+aws ec2 describe-instances \
+    --output json \
+    --filter Name=instance-state-name,Values=running |
+python \
+    -c 'import json; import sys; print json.load(sys.stdin)["Reservations"][0]["Instances"][0]["PublicIpAddress"]'

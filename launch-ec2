@@ -1,0 +1,5 @@
+#!/bin/bash
+aws ec2 run-instances \
+    --image-id ami-e55a648c \
+    --key-name eric1 \
+    --user-data "#include https://get.docker.io"

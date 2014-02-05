@@ -1,0 +1,5 @@
+#!/bin/bash -x
+aws ec2 describe-instances \
+    --filter Name=instance-state-name,Values=running \
+    --output text
+
